@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require '../lib/musician_info_environ'
+
+
+# input1 = gets.strip
+# MusicianInfo::Member.new(input1)
+# puts MusicianInfo::Member.all.first.name
+# puts MusicianInfo::Member.all.first
+
+MusicianInfo::CLI.new.call
