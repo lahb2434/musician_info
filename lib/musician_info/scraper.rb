@@ -20,7 +20,7 @@ class MusicianInfo::Scraper
   def self.artist_members(input) #Finds Members of music ensemble
     members = Nokogiri::HTML(open("https://www.last.fm/music/#{formatted_artist_name(input)}/+wiki")).css('li.factbox-item li span').map{|x| x.text.strip}
     if members == []
-      ['Members listed in Biography.']# Members
+      ['Unable To Retreive Member Information']# Members
     else
       members
     end

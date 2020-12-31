@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require '../lib/musician_info_environ'
+require_relative '../lib/musician_info_environ'
 
 
 # input1 = gets.strip
