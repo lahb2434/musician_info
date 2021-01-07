@@ -47,7 +47,7 @@ class MusicianInfo::Band
         end
     end
       
-    def self.list_bands
+    def self.list_bands #List Bands with index position
         self.all[1..-1].map.with_index(2){|band, position| puts "#{position}. #{band.name}"}
     end
 
