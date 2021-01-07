@@ -1,5 +1,5 @@
 # MusicianInfo
-Find new Bands/Artists based on Artists you already enjoy!
+Finds 10 new Bands/Artists based on Artists you already enjoy!
 
 ## Installation
 
