@@ -15,12 +15,13 @@ class MusicianInfo::Album
         @@all
     end
 
-    def self.list_albums
-        self.all.each{|x| puts x.album_name}
-    end
+    # def self.list_albums #Finds and lists artists
+    #     self.all.each{|artist| puts artist.album_name}
+    # end
 
-    def self.list_album_by_artist(artist)
-        self.all.select{|x| x.album_name if x.artist.name == artist}.map{|x| x.album_name}
+    def self.list_album_by_artist(artist) #Finds Band Albums by Artist Name
+        band = self.all.select{|record| record.album_name if record.artist.name == artist}
+        band.map{|record| record.album_name}
     end
 end
 
