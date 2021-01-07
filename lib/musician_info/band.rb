@@ -16,7 +16,7 @@ class MusicianInfo::Band
         @@all 
     end
 
-    def self.build_band
+    def self.build_band #Creates Bands and Band Info Objects
         self.all.map do |band|
             band.bio = MusicianInfo::Scraper.artist_bio(band.name)
             band.genre = MusicianInfo::Scraper.artist(band.name).css('section.catalogue-tags ul li a').first.text.capitalize
