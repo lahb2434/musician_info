@@ -47,7 +47,7 @@ class MusicianInfo::Scraper
           end
       end
     rescue NoMethodError
-      ['Unable to retreive Information']
+      ['Unable to retreive Information'] #if Unable to retreive information using Nokogiri
     end
   end
   
